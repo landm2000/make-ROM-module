@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:4.0167,4.0167;}
+	.st4{font-family:'KozGoPr6N-Regular-83pv-RKSJ-H';}
+	.st5{font-size:57.0019px;}
+	.st6{font-size:21.3757px;}
+	.st7{letter-spacing:4.76;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:1.25;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;stroke:#050001;stroke-miterlimit:10;}
+</style>
+<g id="レイヤー_2">
+</g>
+<g id="レイヤー_1">
+</g>
+<g id="レイヤー_3">
+	<g>
+		<rect x="34.01" y="150.13" class="st0" width="529.29" height="671.17"/>
+		<g>
+			<polygon class="st1" points="546.64,799.81 193.18,799.81 193.18,198.45 193.18,179.98 546.64,179.98 			"/>
+			<line class="st1" x1="549.06" y1="179.45" x2="195.6" y2="179.45"/>
+			<g>
+				<line class="st0" x1="549.06" y1="424.37" x2="195.6" y2="424.37"/>
+				<g>
+					<line class="st2" x1="549.06" y1="424.37" x2="547.06" y2="424.37"/>
+					<line class="st3" x1="543.04" y1="424.37" x2="199.61" y2="424.37"/>
+					<line class="st2" x1="197.6" y1="424.37" x2="195.6" y2="424.37"/>
+				</g>
+			</g>
+			<line class="st1" x1="549.06" y1="705.55" x2="195.6" y2="705.55"/>
+			<line class="st1" x1="549.06" y1="539.3" x2="195.6" y2="539.3"/>
+			<line class="st1" x1="549.06" y1="799.28" x2="195.6" y2="799.28"/>
+			<line class="st1" x1="549.06" y1="768.04" x2="195.6" y2="768.04"/>
+			<line class="st1" x1="549.06" y1="736.8" x2="195.6" y2="736.8"/>
+			<text transform="matrix(1 0 0 1 46.2168 203.6514)" class="st4 st5">0000</text>
+			<text transform="matrix(1 0 0 1 46.2168 441.7881)" class="st4 st5">X000</text>
+			<text transform="matrix(1.05 0 0 0.5 46.2168 713.7354)" class="st4 st5">FFFA</text>
+			<text transform="matrix(1.05 0 0 0.5 46.2168 746.9854)" class="st4 st5">FFFC</text>
+			<text transform="matrix(1.05 0 0 0.5 46.2168 775.4863)" class="st4 st5">FFFE</text>
+			<text transform="matrix(1.05 0 0 0.5 46.2168 808.7383)" class="st4 st5">FFFF</text>
+			<path class="st2" d="M195.6,540.83c0,0,31.2-0.15,31.2,25.65s0,55.15,0,55.15l16.01,5.34l-16.01,5.34v56.93
+				c0,0,2.54,13.36-31.2,14.84"/>
+			<text transform="matrix(1.05 0 0 1 253.5776 636.7461)"><tspan x="0" y="0" class="st4 st6">指定</tspan><tspan x="42.75" y="0" class="st4 st6 st7">の1</tspan><tspan x="86.59" y="0" class="st4 st6">バイトで埋める</tspan></text>
+			<text transform="matrix(1.05 0 0 1 253.5776 636.7461)"><tspan x="0" y="0" class="st4 st6">指定</tspan><tspan x="42.75" y="0" class="st4 st6 st7">の1</tspan><tspan x="86.59" y="0" class="st4 st6">バイトで埋める</tspan></text>
+			<text transform="matrix(1.05 0 0 1 283.6948 728.5635)"><tspan x="0" y="0" class="st4 st6">IRQ,BR</tspan><tspan x="62.86" y="0" class="st4 st6 st7">K</tspan><tspan x="80.58" y="0" class="st4 st6">のベクタ</tspan></text>
+			<text transform="matrix(1.05 0 0 1 283.6948 761.8154)"><tspan x="0" y="0" class="st4 st6">RE</tspan><tspan x="23.53" y="0" class="st4 st6 st7">S</tspan><tspan x="40.14" y="0" class="st4 st6">のベクタ</tspan></text>
+			<text transform="matrix(1.05 0 0 1 283.6948 791.5039)"><tspan x="0" y="0" class="st4 st6">NM</tspan><tspan x="33.67" y="0" class="st4 st6 st7">I</tspan><tspan x="44.44" y="0" class="st4 st6">のベクタ</tspan></text>
+			<text transform="matrix(1.05 0 0 1 220.2495 454.2842)"><tspan x="0" y="0" class="st4 st6">RO</tspan><tspan x="28.02" y="0" class="st4 st6 st7">M</tspan><tspan x="51.92" y="0" class="st4 st6">を配置してプログラム</tspan></text>
+			<text transform="matrix(1.05 0 0 1 220.2495 214.96)"><tspan x="0" y="0" class="st4 st6">RA</tspan><tspan x="26.33" y="0" class="st4 st6 st7">M</tspan><tspan x="50.23" y="0" class="st4 st6">を配置してワークエリア</tspan></text>
+		</g>
+		<line class="st8" x1="202.44" y1="321.77" x2="202.44" y2="308.34"/>
+		<g>
+			<path class="st0" d="M537.39,316.34c4.25-9.49,5.19-9.56,10.02,0c3.08,6.1,7.37,1.11,8.3-0.85c0.13-0.27,0.2-0.6,0.2-0.95v-5.7
+				c0,0-4.68,11.02-8.5,1.28c-3.13-7.97-7.39-7.52-10.02,0V316.34z"/>
+			<path class="st9" d="M555.9,308.84c0,0-4.68,11.02-8.5,1.28c-3.13-7.97-7.39-7.52-10.02,0"/>
+			<path class="st9" d="M537.39,316.34c4.25-9.49,5.19-9.56,10.02,0c3.08,6.1,7.37,1.11,8.3-0.85c0.13-0.27,0.2-0.6,0.2-0.95"/>
+		</g>
+		<g>
+			<path class="st0" d="M184.39,316.34c4.25-9.49,5.19-9.56,10.02,0c3.08,6.1,7.37,1.11,8.3-0.85c0.13-0.27,0.2-0.6,0.2-0.95v-5.7
+				c0,0-4.68,11.02-8.5,1.28c-3.13-7.97-7.39-7.52-10.02,0V316.34z"/>
+			<path class="st9" d="M202.9,308.84c0,0-4.68,11.02-8.5,1.28c-3.13-7.97-7.39-7.52-10.02,0"/>
+			<path class="st9" d="M184.39,316.34c4.25-9.49,5.19-9.56,10.02,0c3.08,6.1,7.37,1.11,8.3-0.85c0.13-0.27,0.2-0.6,0.2-0.95"/>
+		</g>
+	</g>
+</g>
+</svg>

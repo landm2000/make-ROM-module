@@ -1,0 +1,71 @@
+@charset "utf-8";
+form {
+  float: left;
+}
+.label {
+  width: 200px;
+  float: left;
+}
+.input {
+  width: 600px;
+  float: left;
+}
+#romname {
+  margin-left: 12px;
+}
+.box {
+  width:500px;
+  height: 100px;
+  border: solid 2px red;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 12px;
+  position: relative;
+}
+.boxname {
+  position: absolute;
+  /*z-index: 0;*/
+  top: -10px;
+  left: 30px;
+  background-color: white;
+}
+
+#submit{
+  display: disabled;
+}
+#dialog {
+
+}
+#modal-background{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  text-align: center;
+  display: none;
+}
+#modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  background-color: white;
+  border-radius: 4px;
+  width: 360px;
+  min-height: 450px;
+}
+#up {
+  width: 100%;
+}
+#middle {
+  width: 100%;
+  vertical-align: middle;
+}
+#down {
+  width: 100%;
+}
