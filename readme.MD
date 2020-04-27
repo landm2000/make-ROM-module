@@ -21,7 +21,7 @@
  4. Download the sv file.
 
 ## Install
- Copy ４ files to your folder(directory). It does't need the server.
+ Copy 4 files to your folder(directory). It does't need the server.
 
 ## Licence
 
