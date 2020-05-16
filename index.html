@@ -9,7 +9,7 @@
     <form enctype="multipart/form-data" method="POST">
       <div class="input" id="romname"><label><div class="label">ROM module name :</div><input type="text" name="modulename" id="modulename" value="ROM" placeholder="ROM00"></label></div><br>
       <div class="box"><div class="boxname">&nbsp;&nbsp;Header&nbsp;&nbsp;</div>
-        <div class="input"><label><div class="label">Start address:</div><input type="text" name="address1" id="address1" value="$8000" placeholder="$8000"></label></div><br>
+        <div class="input"><label><div class="label">Start address:</div><input type="text" name="address1" id="address1" value="$F000" placeholder="$8000"></label></div><br>
         <div class="input"><label><div class="label">Data:</div><textarea name="data1" id="data1" rows="4" cols="30" placeholder="10
 20 or Drag a dat File in here.
 30"></textarea></label></div>
@@ -25,7 +25,12 @@
         <div class="input"><label><div class="label">Start address:</div><input type="text" name="address4" id="address4" value="$FFFA" placeholder="$FFFA"></label></div><br>
         <div class="input"><label><div class="label">Data:</div><textarea name="data4" id="data4" rows="4" cols="30" placeholder="10
 20 or Drag a dat File in here.
-30"></textarea></label></div>
+30">00
+F0
+00
+F0
+00
+F0</textarea></label></div>
                 </div>
     <button id="submit">make</button>
     </form>

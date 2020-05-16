@@ -45,8 +45,25 @@ $(function(){
 function load_file(file,area){
   let fileReader = new FileReader();
   fileReader.onload = function(e){
-    html = e.target.result;
-    area.html(html);
+    //html = e.target.result;
+    let htmls = "";
+    let html = "";
+    let htmls1=e.target.result.split(" ");
+    if(htmls1.length > 1) htmls = htmls1;
+    else{
+      let htmls2=e.target.result.split("\n");
+      if(htmls2.length > 1) htmls = htmls2;
+      else{
+        let htmls3=e.target.result.split(",");
+        if(htmls3.length > 1) htmls = htmls3;
+      }
+    }
+    for(const i in htmls){
+      const t = htmls[i];
+      if(t.length!=0)
+        html += t+ "\n";
+    }
+    area.html(html.trim());
   }
   fileReader.readAsText(file);
 }
@@ -72,10 +89,8 @@ function conv_text_16to10(tadr){
 function make_sv(modulename){
   let text = "module " + modulename +" (\n"+
              "    input logic [15:0] adr,\n"+
-             "    output logic [7:0] dat,\n"+
-             "    output logic [15:0] intrupt\n"+
+             "    output logic [7:0] dat\n"+
              ");\n"+
-             "assign intrupt = 16'hF000;\n"+
              "    always_comb\n"+
              "      case (adr)\n";
   // 開始アドレスの取得 : getting start address by text
@@ -90,37 +105,27 @@ function make_sv(modulename){
   const d11 = $("#data1").val();
   const d1 = d11.split("\n");
   for(const d in d1){
-    text += "        16'h"+ sadr.toString(16) +
-            ": dat = 8'h"+ d1[d].toString(16) +";\n";
+    text += "        16'h"+ (sadr.toString(16)).toUpperCase() +
+            ": dat = 8'h"+ (d1[d].toString(16)).toUpperCase() +";\n";
     sadr++;
   }
   // 割り込みベクタアドレス : IRQ,BRK/RES/NMI Vector Address
-  const eadr = 0xFFFA;
-  // クリア処理
-  if(sadr < 0x10000){
-    // 途中データクリア : filling the gap with fixed data
-    // const m1 = $("#data2").val();
-    // const m2 = $("#data3").val();
-    const md = $("#data2").val() + $("#data3").val();
-    for(; sadr < eadr; sadr++){
-      text += "        16'h"+ sadr.toString(16) +
-      ": dat = 8'h"+ md +";\n";
-    }
-    // 割り込みベクタのデータ書き出し : export the IRQ Vector
-    const d22 = $("#data4").val();
-    const d2 = d22.split("\n");
-    for(const d in d2){
-      text += "        16'h"+ sadr.toString(16) +
-              ": dat = 8'h"+ d2[d].toString(16) +";\n";
-      switch(sadr){
-        case 0xFFFA:
-      }
-      sadr++;
-    }
+  let eadr = 0xFFFA;
+  // 割り込みベクタのデータ書き出し : export the IRQ Vector
+  const d22 = $("#data4").val();
+  const d2 = d22.split("\n");
+  for(const d in d2){
+    text += "        16'h"+ (eadr.toString(16)).toUpperCase() +
+            ": dat = 8'h"+ (d2[d].toString(16)).toUpperCase() +";\n";
+    eadr++;
   }
   //
-  text +=   "        default: dat = 8'h00;\n";
-  text += "    endcase\n  endmodule";
+  const m1 = $("#data2").val();
+  const m2 = $("#data3").val();
+  const md = $("#data2").val() + $("#data3").val();
+  text += "// ----------------------------\n";
+  text += "        default:  dat = 8'h"+md.toUpperCase()+";\n";
+  text += "      endcase\n  endmodule";
   return text;
 }
 
